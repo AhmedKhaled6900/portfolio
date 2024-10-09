@@ -1,9 +1,12 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
-import { IoCloseSharp } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
+<IoMdClose />
 
+import img from "@/public/IMG_20240725_030359.jpg"
 // import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { IoMenuSharp } from "react-icons/io5";
 const Navbar = () => {
@@ -45,14 +48,14 @@ const routes =[
         
           <div className=" flex items-center justify-center">
             <Link href="/" className="text-xl font-bold text-sky-500  ">
-              MyLogo
+          <Image className='rounded-full border-sky-500 border-2' src={img} width={50} height={50} alt="" ></Image>
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center ">
             {routes.map((route)=>
-            <Link href={route.href} className={route.active ? "text-sky-500 ml-4 font-bold hover:text-sky-500 ":"text-white ml-4 font-bold  hover:text-sky-500"} >
+            <Link key={route.label} href={route.href} className={route.active ? "text-sky-500 ml-4 font-bold hover:text-sky-500 ":"text-white ml-4 font-bold  hover:text-sky-500"} >
             {route.label}
             </Link>
           
@@ -71,11 +74,9 @@ const routes =[
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <IoCloseSharp size={30} className="block  text-white" aria-hidden="true" />
+                <IoMdClose size={30} className="block  text-sky-500" aria-hidden="true" />
               ) : (
-                <IoMenuSharp size={30} className="block  text-white" aria-hidden="true" />
-           
-
+                <IoMenuSharp size={30} className="block  text-sky-500" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -85,7 +86,7 @@ const routes =[
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden" id="mobile-menu  ">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-4 sm:px-3">
 
           {routes.map((route)=>
             <Link onClick={toggleMenu} href={route.href} className={route.active ? "text-sky-500 ml-4 font-bold block  hover:text-sky-500 ":"text-white block ml-4 font-bold  hover:text-sky-500"} >
@@ -93,18 +94,6 @@ const routes =[
             </Link>
           
             )}
-            {/* <a href="#home" className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">
-              Home
-            </a>
-            <a href="#about" className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">
-              About
-            </a>
-            <a href="#services" className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">
-              Services
-            </a>
-            <a href="#contact" className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium">
-              Contact
-            </a> */}
           </div>
         </div>
       )}

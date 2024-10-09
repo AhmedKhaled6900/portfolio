@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/navbar";
+import 'aos/dist/aos.css'; 
+import Footer from "./components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,11 +27,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gredient1 to-gredient2 antialiased`}
+    <html lang="en" >
+      <body 
+        className={`${geistSans.variable} ${geistMono.variable} w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black  antialiased`}
       >
+        <div className="">
+        <Navbar></Navbar>
         {children}
+        <Footer/> 
+
+        </div>
+      
       </body>
     </html>
   );

@@ -1,0 +1,67 @@
+
+[
+    {
+      "id": "e-commerce",
+      "title": "e-commerce",
+      "description": " Full stack e-commerce app with dyanamic and real time updated  admin dashboard and user authentication and authorization including Oauth and credentials. Utilizing the App Router feature of Next.js 14, it ensures dynamic routing for fast, smooth navigation across product categories and pages.",
+      "images": ["/images/project1.gif",
+      "/images/soon1.jpg","/images/soon2.jpg","/images/soon3.jpg","/images/soon4.jpg"
+       
+      ],
+      "technologies": [ "Next.js", "React", "Tailwind CSS", "Shadcn ui", "Zustand", "Prisma", "Auth.Js","Resend","Becrypt" ],
+      "Features":["Responsive design", "Admin Dashboard", "authentication", "authorization", "Forget password and reset password", "Dynamic routing", "Real time updates", "dynamic routing", "dynamic routing", "dynamic routing", "dynamic routing"],
+      "liveUrl": "https://project-one-live.com",
+      "repoUrl": "https://github.com/yourusername/project-one"
+    },
+    {
+      "id": "e-commerce",
+      "title": "e-commerce",
+      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
+      "images": ["/images/project1.gif","/images/project1.gif"
+     
+       
+      ],
+      "technologies": ["React", "Next.js", "Tailwind CSS"],
+      "liveUrl": "https://project-one-live.com",
+      "repoUrl": "https://github.com/yourusername/project-one"
+    },
+    {
+      "id": "3",
+      "title": "Project One",
+      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
+      "images": ["/images/project1.gif",
+      ""
+       
+      ],
+      "technologies": ["React", "Next.js", "Tailwind CSS"],
+      "liveUrl": "https://project-one-live.com",
+      "repoUrl": "https://github.com/yourusername/project-one"
+    },
+    {
+      "id": "4",
+      "title": "Project One",
+      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
+      "images": ["/images/project1.gif",
+      ""
+       
+      ],
+      "technologies": ["React", "Next.js", "Tailwind CSS"],
+      "liveUrl": "https://project-one-live.com",
+      "repoUrl": "https://github.com/yourusername/project-one"
+    },
+    {
+      "id": "5",
+      "title": "Project One",
+      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
+      "images": ["/images/project1.gif",
+      ""
+       
+      ],
+      "technologies": ["React", "Next.js", "Tailwind CSS"],
+      "liveUrl": "https://project-one-live.com",
+      "repoUrl": "https://github.com/yourusername/project-one"
+    }
+
+
+  ]
+  
