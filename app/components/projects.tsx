@@ -30,7 +30,7 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
       {
         root: null,
         threshold: 0,
-        rootMargin: ' -100px 0px 0px 0px',
+        rootMargin: ' 0px 0px 0px 0px',
       }
     );
 
@@ -45,19 +45,19 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
     };
    }, []);
     return (
-      <div ref={sectionRef} className= {isAtTop ? " min-h-[100vh] rounded-lg mt-10 section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
-        " rounded-lg  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black h-[100vh] flex justify-center flex-col items-center "}  >
+      <div ref={sectionRef} className= {isAtTop ? "  rounded-lg mt-10 section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
+        " rounded-lg  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black  justify-center items-center "}  >
 
    
-        <div className=""   >
+        <div className="mt-20 pt-5"   >
             <Link href={`/projects/${project.id}`} className ="  font-bold text-3xl text-sky-500 ">
             {project.title}
             </Link>
             </div>
        <div  className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 my-10">
-       <Image className="" width={600} height={600} src={project.images[0]} alt=""/>
+       <Image className="" width={600} height={800} src={project.images[0]} alt=""/>
        
-       <div className=" p-2">
+       <div className=" p-2 mt-4">
       {/* <h1 className="text-3xl font-bold my-4">{project.title}</h1> */}
       <p className=" ">{project.description}</p>
 <div className="mt-4 flex gap-4 items-center justify-center lg:justify-start ">

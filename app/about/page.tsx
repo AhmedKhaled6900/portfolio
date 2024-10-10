@@ -61,20 +61,8 @@ const HeroSection = () => {
       </div>
 
       {/* Floating Interactive Icons */}
-      <div className="absolute top-16 left-16">
-        <img
-          src="/path-to-your-logo.svg"
-          alt="Tech Logo"
-          className="w-12 h-12 opacity-80 hover:scale-110 transform transition duration-300 ease-in-out"
-        />
-      </div>
-      <div className="absolute top-16 right-16">
-        <Image
-          src={img}
-          alt="Another Logo"
-          className="w-12 h-12 opacity-80 hover:scale-110 transform transition duration-300 ease-in-out"
-        />
-      </div>
+  
+      
     </section>
   );
 };

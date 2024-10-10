@@ -1,11 +1,11 @@
 
 [
     {
-      "id": "e-commerce",
-      "title": "e-commerce",
+      "id": "E-commerce",
+      "title": "E-commerce",
       "description": " Full stack e-commerce app with dyanamic and real time updated  admin dashboard and user authentication and authorization including Oauth and credentials. Utilizing the App Router feature of Next.js 14, it ensures dynamic routing for fast, smooth navigation across product categories and pages.",
-      "images": ["/images/project1.gif",
-      "/images/soon1.jpg","/images/soon2.jpg","/images/soon3.jpg","/images/soon4.jpg"
+      "images": [
+      "/images/e-commerce1.jpg","/images/soon2.jpg","/images/soon3.jpg","/images/soon4.jpg"
        
       ],
       "technologies": [ "Next.js", "React", "Tailwind CSS", "Shadcn ui", "Zustand", "Prisma", "Auth.Js","Resend","Becrypt" ],
@@ -14,10 +14,10 @@
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
-      "id": "e-commerce",
-      "title": "e-commerce",
-      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
-      "images": ["/images/project1.gif","/images/project1.gif"
+      "id": "Todo",
+      "title": "Todo",
+      "description": "To-do application leverages the power of Zustand for seamless state management , saving ito the local storge  and React Hot Toast for real-time, user-friendly notifications integerated .",
+      "images": ["/images/todo1.jpg","/images/project1.gif"
      
        
       ],
@@ -26,9 +26,9 @@
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
-      "id": "3",
-      "title": "Project One",
-      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
+      "id": "Soon",
+      "title": "Soon",
+      "description": "Coming soon landing page with a dynamic countdown timer that counts down from months to seconds , modern and responsive design . Enhanced with localization capabilities, the website supports both English and Arabic languages.  Additionally, the contact page includes a robust form built with React Hook Form and Zod for efficient form handling and validation.",
       "images": ["/images/project1.gif",
       ""
        
@@ -38,10 +38,10 @@
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
-      "id": "4",
-      "title": "Project One",
-      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
-      "images": ["/images/project1.gif",
+      "id": "Moviedb",
+      "title": "Moviedb",
+      "description": " Movie DB App is a dynamic and responsive web application everaging data fetched from The Movie Database (TMDB).  this app offers a seamless search experience, allowing users to explore their favorite films and shows. Built with React, the application utilizes Redux Toolkit for efficient state management and React Bootstrap for a responsive and modern design. Users can effortlessly search for movies or TV series, view detailed information",
+      "images": ["/images/moviedb.jpg",
       ""
        
       ],
@@ -50,10 +50,22 @@
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
-      "id": "5",
-      "title": "Project One",
+      "id": "Landing page",
+      "title": "Landing page",
       "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
-      "images": ["/images/project1.gif",
+      "images": ["/images/creativity.gif",
+      ""
+       
+      ],
+      "technologies": ["React", "Next.js", "Tailwind CSS"],
+      "liveUrl": "https://project-one-live.com",
+      "repoUrl": "https://github.com/yourusername/project-one"
+    },
+    {
+      "id": "Productly page",
+      "title": "Productly page",
+      "description": "A comprehensive description of Project One, highlighting its features and functionalities.",
+      "images": ["/images/productly.jpg",
       ""
        
       ],

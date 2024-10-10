@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-y-4 ms-4 ">
+        <div className="flex flex-col justify-start items-start gap-y-4 ms-4 ">
             <p className="text-white font-semibold text-lg"> Links</p>
             {
                 routes.map((route)=>
