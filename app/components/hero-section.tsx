@@ -77,7 +77,7 @@ useEffect(() => {
            <div className="flex items-start lg:items-center justify-start lg:justify-center flex-col lg:flex-row text-sm text-sky-500 gap-6 mt-6">
 {
   routes.map((route)=>(
-    <div className= " rounded-lg flex lg:flex-col   flex-row gap-6 text-center items-center lg:justify-center justify-start hover:bg-black w-full  p-4  shadow-inner shadow-slate-700 ">
+    <div className= " rounded-lg flex lg:flex-col   flex-row gap-6 text-center items-center lg:justify-center justify-start hover:bg-black w-full  p-4  shadow-inner hover:shadow-sky-500 shadow-slate-700 ">
       {
         route.icon
       }

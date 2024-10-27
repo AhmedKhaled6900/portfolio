@@ -225,7 +225,7 @@ export  const SecondSection = () => {
               <div key={item.head}
                 data-aos="fade-down"
                 data-aos-delay={item.delay}
-                className="border-s-2 group border-sky-500   bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gradient1 to-black  flex flex-col justify-start items-start rounded-lg shadow-md shadow-slate-700 p-4 "
+                className="border-s-2 group border-sky-500 hover:shadow-sky-500  bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gradient1 to-black  flex flex-col justify-start items-start rounded-lg shadow-md shadow-slate-700 p-4 "
               >
                 <div className="text-sky-500 flex items-start justify-center text-center gap-x-3  ">
                   <div>{item.icon}</div>

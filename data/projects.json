@@ -10,7 +10,7 @@
       ],
       "technologies": [ "Next.js", "React", "Tailwind CSS", "Shadcn ui", "Zustand", "Prisma", "Auth.Js","Resend","Becrypt" ],
       "Features":["Responsive design", "Admin Dashboard", "authentication", "authorization", "Forget password and reset password", "Dynamic routing", "Real time updates", "dynamic routing", "dynamic routing", "dynamic routing", "dynamic routing"],
-      "liveUrl": "https://project-one-live.com",
+      "liveUrl": "https://next-14-auth-green.vercel.app",
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
@@ -22,7 +22,7 @@
        
       ],
       "technologies": ["React", "Next.js", "Tailwind CSS"],
-      "liveUrl": "https://project-one-live.com",
+      "liveUrl": "https://todo-zustand-neon.vercel.app",
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
@@ -34,7 +34,7 @@
        
       ],
       "technologies": ["React", "Next.js", "Tailwind CSS"],
-      "liveUrl": "https://project-one-live.com",
+      "liveUrl": "https://soon-page-nine.vercel.app/",
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
@@ -46,7 +46,7 @@
        
       ],
       "technologies": ["React", "Next.js", "Tailwind CSS"],
-      "liveUrl": "https://project-one-live.com",
+      "liveUrl": "https://ahmedkhaled6900.github.io/moviedp/",
       "repoUrl": "https://github.com/yourusername/project-one"
     },
     {
