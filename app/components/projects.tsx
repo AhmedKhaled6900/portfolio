@@ -19,7 +19,7 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting )  {
+        if ( entry.intersectionRatio  )  {
           // Section has reached the top
           setIsAtTop(true);
         } else {
@@ -28,9 +28,9 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
         }
       },
       {
-        root: null,
+    
         threshold: 0,
-        rootMargin: ' 0px 0px 0px 0px',
+        rootMargin: ' 100px 0px 0px 0px',
       }
     );
 
@@ -45,7 +45,7 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
     };
    }, []);
     return (
-      <div ref={sectionRef} className= {isAtTop ? "  rounded-lg mt-10 section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
+      <div ref={sectionRef} className= {isAtTop ? "  rounded-lg mt-10  section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
         " rounded-lg  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black  justify-center items-center "}  >
 
    
@@ -54,10 +54,10 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
             {project.title}
             </Link>
             </div>
-       <div  className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 my-10">
+       <div  className="md:grid md:grid-cols-2 md:items-start md:gap-x-8 my-10">
        <Image className="" width={600} height={800} src={project.images[0]} alt=""/>
        
-       <div className=" p-2 mt-4">
+       <div className=" p-2 mt-4 md:mt-0">
       {/* <h1 className="text-3xl font-bold my-4">{project.title}</h1> */}
       <p className=" ">{project.description}</p>
 <div className="mt-4 flex gap-4 items-center justify-center lg:justify-start ">

@@ -60,7 +60,7 @@ text="A journey of passion, persistence, and growth in crafting digital experien
     
  
   <div className=" border-b-[.1px] border-b-sky-500 my-4 " >
-  <p className="p-2 text-white " >
+  <p className="p-2 text-white  " >
          Front-End Developer with 3 years of experience in learning and mastering front-end
 basics and new technologies to achieve building responsive and dynamic web apps. 
 That leads me to be proficient in HTML, CSS, JavaScript, React, and Next.js .
@@ -82,18 +82,19 @@ tasks faster and with very high accuracy.
 </div>
 </div>
 
-<div className="grid grid-cols-1 lg:grid-cols-4 gap-4 " >
+<div className="grid grid-cols-1 lg:grid-cols-4  md:grid-cols-2 gap-4 " >
 
        
 {
     steps.map((step)=>
-        <div data-aos="zoom-in"    className="flex flex-col text-white  bg-gradient-to-r rounded-lg items-center p-3">
+        <div data-aos="zoom-in"    className="flex flex-col text-white  bg-gradient-to-r rounded-lg items-center ">
 
 <Image src={step.icon} alt=""/>
-<p className="font-bold text-2xl mb-3">
+<p className="font-bold text-2xl mb-3 ">
     {step.head}
 </p>
-<p>
+
+<p className="p-2">
     {step.text}
 </p>
         </div>

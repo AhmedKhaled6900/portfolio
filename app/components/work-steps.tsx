@@ -58,14 +58,14 @@ export const WorkSteps =()=>{
 
 
     {data.map((item)=>(
-        <div key={item.num}  data-aos="fade-down" className=" lg:grid group   grid-cols-2 gap-0 lg:gap-5 flex justify-center items-center flex-col">
+        <div key={item.num}  data-aos="fade-down" className=" lg:grid group md:grid  grid-cols-2  gap-5 flex justify-center items-center flex-col">
         
 
        <Image className="rounded-lg"  src={item.img}  alt=""></Image>
         
        <div>
 
-<div className="flex-col group-hover:translate-y-0 group-hover:shadow-sky-500 group-hover:mb-3 group-hover:lg:mb-0  transition-transform duration-500 flex lg:translate-y-0 translate-y-[-50px]  bg-[radial-gradient(ellipse_at_left_top,_var(--tw-gradient-stops))] from-gradient1 to-black  shadow-md shadow-slate-700  border-s-2 rounded-lg border-sky-500">
+<div className="flex-col group-hover:translate-y-0 group-hover:shadow-sky-500 group-hover:mb-5  group-hover:md:mb-0    transition-transform duration-500 flex md:translate-y-0 translate-y-[-50px]  bg-[radial-gradient(ellipse_at_left_top,_var(--tw-gradient-stops))] from-gradient1 to-black  shadow-md shadow-slate-700  border-s-2 rounded-lg border-sky-500">
     <div className="flex justify-start items-start px-4 bg-black bg-opacity-20 lg:bg-transparent gap-x-5 rounded-ss-lg ">
         <p className=" my-2 text-3xl font-bold text-opacity-50 opacity-45    ">{item.num}</p>
     <p className=" my-2 text-2xl font-bold text-sky-500">{item.head}</p>

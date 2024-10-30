@@ -6,6 +6,7 @@ import { GrPlan } from "react-icons/gr";
 import { FaRegSmile } from "react-icons/fa";
 import { BiSupport } from "react-icons/bi";
 import { IoTimerOutline } from "react-icons/io5";
+import { SlUserFollowing } from "react-icons/sl";
 import React, { useEffect } from 'react';
 import AOS from "aos";
 export default function Hero() {
@@ -34,6 +35,11 @@ delay:"animate__delay-4s"
     {
 text :"FIXED PRICE",
 icon: <BsCurrencyDollar size={30} className=" animate__animated animate__fadeInDown" />,
+delay:"animate__delay-5s"
+  },
+    {
+text :"Follow UP",
+icon: <SlUserFollowing size={30} className=" animate__animated animate__fadeInDown" />,
 delay:"animate__delay-5s"
   },
 ]
@@ -74,7 +80,7 @@ useEffect(() => {
                   Iam designing apps with 💕and 👌 
                 </h1>
                 </div>
-           <div className="flex items-start lg:items-center justify-start lg:justify-center flex-col lg:flex-row text-sm text-sky-500 gap-6 mt-6">
+           <div className=" grid sm-grid-cols-2 md:grid-cols-3 lg:grid-cols-6  text-sm text-sky-500 gap-6 mt-6">
 {
   routes.map((route)=>(
     <div className= " rounded-lg flex lg:flex-col   flex-row gap-6 text-center items-center lg:justify-center justify-start hover:bg-black w-full  p-4  shadow-inner hover:shadow-sky-500 shadow-slate-700 ">

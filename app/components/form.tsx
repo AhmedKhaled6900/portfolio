@@ -89,25 +89,8 @@ const contact =[
       };
       
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
-<div className="  rounded-lg w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black p-3 flex ">
-<div className="flex flex-col w-full gap-5 ">
-{
-    contact.map((item)=>
-        <div key={item.id} className=" w-full flex justify-start gap-5 items-center p-3" >
-            <div>
-                {item.icon }
-            </div>
-            <div className="text-white">
-                {item.info}
-            </div>
-
-        </div>
-    )
-}
-</div>
-</div>
-<div className="  rounded-lg w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black p-3 flex ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 ">
+            <div className="  rounded-lg w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black p-3 flex ">
         <form className=" text-white mb-5 w-full"  onSubmit={handleSubmit(onSubmit)}>
             <div className =  " w-full my-2 text-white p-3">               
                 <input placeholder=" Name" className=" bg-transparent w-full focus:outline-none focus:bg-transparent focus:shadow-md focus:shadow-sky-500 focus:border-0 shadow-sky-500 p-1 rounded-lg active:bg-transparent border-2  border-sky-500 e" {...register('name')}  type="text" name="name"  />
@@ -135,6 +118,24 @@ const contact =[
             </div>
         </form>
         </div>
+<div className="  rounded-lg w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black p-3 flex ">
+<div className="flex flex-col w-full gap-5 ">
+{
+    contact.map((item)=>
+        <div key={item.id} className=" w-full flex justify-start gap-5 items-center p-3" >
+            <div>
+                {item.icon }
+            </div>
+            <div className="text-white">
+                {item.info}
+            </div>
+
+        </div>
+    )
+}
+</div>
+</div>
+
         </div>
 
     )
