@@ -16,15 +16,17 @@ const ProjectsPage = ()=>{
     const ProjectsData:Project[]= projects
     return (
         <Container>
-            <div>
+           <div className="mb-4">
+
             <Heading title="My Projects" 
             text="Projects made with Love and Passion" 
             text1="100 % Responsive"
             text2="100 % User friendly"
             >
             </Heading>
+            
             </div>
-{
+            {
     ProjectsData.map((project)=>
 
         <ProjectsComponent project ={project}>

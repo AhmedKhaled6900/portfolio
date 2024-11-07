@@ -40,7 +40,7 @@
     {
       "id": "Moviedb",
       "title": "Moviedb",
-      "description": " Movie DB App is a dynamic and responsive web application everaging data fetched from The Movie Database (TMDB).  this app offers a seamless search experience, allowing users to explore their favorite films and shows. Built with React, the application utilizes Redux Toolkit for efficient state management and React Bootstrap for a responsive and modern design. Users can effortlessly search for movies or TV series, view detailed information",
+      "description": " Movie DB App is a dynamic and responsive web application everaging data fetched from The Movie Database (TMDB).  this app allow users to explore their favorite films and shows. Built with React, the application utilizes Redux Toolkit for efficient state management and React Bootstrap for a responsive design. Users can search for movies or TV series, view detailed information",
       "images": ["/images/moviedb.jpg",
       ""
        

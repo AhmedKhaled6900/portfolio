@@ -18,7 +18,7 @@ interface props {
         });
       }, []);
     return (
-        <div data-aos="zoom-in" className="flex items-center flex-col justify-center my-10 text-white">
+        <div data-aos="zoom-in" className="flex items-center flex-col justify-center mt-5 text-white">
         <p className="text-center font-bold text-3xl my-4">
            {title}
         </p>

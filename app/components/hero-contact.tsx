@@ -36,7 +36,7 @@ const HeroSectionContact = () => {
     <section className="    flex flex-col justify-center items-center text-center text-white">
       {/* Animated Typing Text */}
 <div data-aos="zoom-in"> 
-    <Image className='rounded-full shadow-2xl my-10 shadow-sky-500' src={img} width={200} height={200} alt="img" ></Image>
+    <Image className='rounded-full shadow-2xl mt-10 mb-5 shadow-sky-500' src={img} width={200} height={200} alt="img" ></Image>
 </div>
 
 
@@ -50,7 +50,7 @@ const HeroSectionContact = () => {
       </p>
 
       {/* CTA Button */}
-      <div className="mt-6">
+      <div className="mt-6 ">
         <a href="/contact" className="px-8 py-3 bg-sky-300 text-black font-semibold rounded-lg hover:bg-sky-500">
           Let’s create something amazing
         </a>

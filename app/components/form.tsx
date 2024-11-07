@@ -89,22 +89,22 @@ const contact =[
       };
       
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 ">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 ">
             <div className="  rounded-lg w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black p-3 flex ">
-        <form className=" text-white mb-5 w-full"  onSubmit={handleSubmit(onSubmit)}>
-            <div className =  " w-full my-2 text-white p-3">               
+        <form className=" text-white  w-full"  onSubmit={handleSubmit(onSubmit)}>
+            <div className =  " w-full  text-white p-3">               
                 <input placeholder=" Name" className=" bg-transparent w-full focus:outline-none focus:bg-transparent focus:shadow-md focus:shadow-sky-500 focus:border-0 shadow-sky-500 p-1 rounded-lg active:bg-transparent border-2  border-sky-500 e" {...register('name')}  type="text" name="name"  />
                 {errors.name && <p className="pt-3">{errors.name.message}</p>}
             </div>
-            <div className = "my-2 text-white p-3">
+            <div className = " text-white p-3">
                 <input placeholder=" Email" className=" bg-transparent w-full focus:outline-none focus:bg-transparent focus:shadow-md focus:shadow-sky-500 focus:border-0 shadow-sky-500 p-1 rounded-lg active:bg-transparent border-2  border-sky-500 e" {...register('email')} type="email" name="email"  />
                 {errors.email && <p className="pt-3">{errors.email.message}</p>}
             </div>
-            <div className = "my-2 text-white p-3">
+            <div className = " text-white p-3">
                 <input placeholder=" Subject"  className=" bg-transparent w-full focus:outline-none focus:bg-transparent focus:shadow-md focus:shadow-sky-500 focus:border-0 shadow-sky-500 p-1 rounded-lg active:bg-transparent border-2  border-sky-500 e" {...register('subject')} type="text" name="subject"  />
                 {errors.subject && <p className="pt-3">{errors.subject.message}</p>}
             </div>
-            <div className = "my-2 text-white p-3">
+            <div className = " text-white p-3">
               <textarea placeholder=" Message" className=" bg-transparent w-full focus:outline-none focus:bg-transparent focus:shadow-md focus:shadow-sky-500 focus:border-0 shadow-sky-500 p-1 rounded-lg active:bg-transparent border-2  border-sky-500 e" {...register('message')} name="message" />
               {errors.message && <p className="pt-3">{errors.message.message}</p>}
             </div>
@@ -119,10 +119,10 @@ const contact =[
         </form>
         </div>
 <div className="  rounded-lg w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black p-3 flex ">
-<div className="flex flex-col w-full gap-5 ">
+<div className="flex justify-center items-sta flex-col w-full gap-5 ">
 {
     contact.map((item)=>
-        <div key={item.id} className=" w-full flex justify-start gap-5 items-center p-3" >
+        <div key={item.id} className=" w-full flex  items-center gap-3 p-2" >
             <div>
                 {item.icon }
             </div>

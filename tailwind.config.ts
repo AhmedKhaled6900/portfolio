@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'top-shadow': '0 -4px 6px -1px rgba(0, 0, 0, 0.1)',
+      },
       colors: {
         gradient1:"#1d5b79",
 			  gradient2:"#0000008c",

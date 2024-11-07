@@ -19,7 +19,7 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if ( entry.intersectionRatio  )  {
+        if ( entry.intersectionRatio    )  {
           // Section has reached the top
           setIsAtTop(true);
         } else {
@@ -30,7 +30,7 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
       {
     
         threshold: 0,
-        rootMargin: ' 100px 0px 0px 0px',
+        rootMargin: ' 0px 0px 0px 0px',
       }
     );
 
@@ -43,21 +43,19 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
         observer.unobserve(sectionRef.current);
       }
     };
-   }, []);
+   }, [isAtTop]);
     return (
-      <div ref={sectionRef} className= {isAtTop ? "  rounded-lg mt-10  section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
-        " rounded-lg  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black  justify-center items-center "}  >
-
-   
-        <div className="mt-20 pt-5"   >
+      <section ref={sectionRef} className= {isAtTop  ? "     min-h-screen rounded-lg section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
+        " rounded-lg   bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black  justify-center items-center "}  >
+        <div >
             <Link href={`/projects/${project.id}`} className ="  font-bold text-3xl text-sky-500 ">
             {project.title}
             </Link>
             </div>
-       <div  className="md:grid md:grid-cols-2 md:items-start md:gap-x-8 my-10">
+       <div  className=" h-full flex flex-col justify-center items-center md:grid md:grid-cols-2 md:items-start md:gap-x-8 my-10">
        <Image className="" width={600} height={800} src={project.images[0]} alt=""/>
        
-       <div className=" p-2 mt-4 md:mt-0">
+       <div className=" p-2 mt-4 md:mt-0 h-full">
       {/* <h1 className="text-3xl font-bold my-4">{project.title}</h1> */}
       <p className=" ">{project.description}</p>
 <div className="mt-4 flex gap-4 items-center justify-center lg:justify-start ">
@@ -77,7 +75,7 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
         
     
        
-             </div>
+             </section>
 
     )
 }
