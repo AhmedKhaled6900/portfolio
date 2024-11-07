@@ -52,7 +52,7 @@ export default function Hero() {
   }, []);
   return (
     <div >
-      <div className='   '>
+      <div className='mt-5   '>
         <div className=' flex flex-col'>
           <div className=" text-white">
             <h1 className='font-bold text-4xl md:text-6xl text-center '>

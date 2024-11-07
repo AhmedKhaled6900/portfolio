@@ -58,7 +58,7 @@ export const WorkSteps =()=>{
 
 
     {data.map((item)=>(
-        <div key={item.num}  data-aos="fade-down" className=" lg:grid group md:grid  grid-cols-2  gap-5 flex justify-center items-center flex-col">
+        <div key={item.num}  data-aos="fade-down" className=" mt-5 lg:grid group md:grid  grid-cols-2  gap-5 flex justify-center items-center flex-col">
         
 
        <Image className="rounded-lg"  src={item.img}  alt=""></Image>
