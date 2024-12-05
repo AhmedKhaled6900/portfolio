@@ -48,9 +48,9 @@ export const ProjectsComponent:React.FC<props> =({project})=>{
       <section ref={sectionRef} className= {isAtTop  ? "     min-h-screen rounded-lg section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black bg-opacity-50":
         " rounded-lg   bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient1 to-black  justify-center items-center "}  >
         <div >
-            <Link href={`/projects/${project.id}`} className ="  font-bold text-3xl text-sky-500 ">
+            <p  className ="  font-bold text-3xl text-sky-500 ">
             {project.title}
-            </Link>
+            </p>
             </div>
        <div  className=" h-full flex flex-col justify-center items-center md:grid md:grid-cols-2 md:items-start md:gap-x-8 my-10">
        <Image className="" width={600} height={800} src={project.images[0]} alt=""/>

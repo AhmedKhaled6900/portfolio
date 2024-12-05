@@ -32,32 +32,9 @@ const ProjectsPage = ()=>{
         <ProjectsComponent project ={project}>
 
         </ProjectsComponent>
-        // <div className="flex flex-col justify-center items-center h-[100vh]">
-        //     <div>
-        //     {project.title}
-        //     <Image width={600} height={800} src= {project.images[0]} alt="">
-
-        //     </Image>
-        //     </div>
         
-        // </div>
     )
 }
-
-{/* <div>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, placeat!</h1>
-</div> */}
-     
         </Container>
     )
 }
